@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevenção</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <h1>Outubro Rosa</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="sintomas.html">Sintomas</a>
+                    </li>
+                    <li>
+                        <a href="prevencao.html">Prevenção</a>
+                    </li>
+                    <li>
+                        <a href="tratamento.html">Tratamentos</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="imagem">
+        <div>
+            <img class="img" src="imagens/img_contato.PNG" alt="">
+        </div>
+    </section>
+
+
+
+
+    <section class="contato">
+        <div class="container2">
+            <h2>Entre Em Contato – Estamos Aqui Para te Ouvir</h2>
+            <form id="formContato">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <input type="text" id="assunto" placeholder="Assunto" required>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit">Enviar via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="sobre">
+        <div class="container2">
+            <h2>Nosso Papel na Luta Contra o Câncer de Mama</h2>
+            <p>
+                Somos uma iniciativa voltada para levar conscientização, orientação e apoio sobre o câncer de mama.
+                Surgimos do desejo de impactar vidas por meio da informação, da empatia e do cuidado coletivo. Nosso
+                objetivo é garantir que todas as pessoas tenham acesso a conteúdos claros, seguros e acolhedores, que
+                contribuam para a prevenção, o diagnóstico antecipado e a atenção completa à saúde.
+                <br><br>
+                O Outubro Rosa vai além de uma campanha: é um lembrete de que cada mulher deve observar seu corpo, ouvir
+                seus sinais e colocar o autocuidado como prioridade. Nosso trabalho é reforçar essa mensagem durante o
+                ano inteiro, oferecendo materiais confiáveis, informações atualizadas e suporte emocional a quem está
+                enfrentando a doença, assim como às suas famílias e a todos que desejam aprender e ajudar.
+                <br><br>
+                Sabemos que cada trajetória é diferente. Por isso, buscamos criar um ambiente acolhedor, humano e
+                respeitoso, onde cada pessoa se sinta apoiada. Nossa missão é incentivar força, oferecer apoio e
+                fortalecer uma rede de pessoas unidas pela conscientização.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Outubro Rosa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const form = document.getElementById('formContato');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const assunto = document.getElementById('assunto').value;
+        const mensagem = document.getElementById('mensagem').value;
+
+        const telefone = "5511999999999";
+        const texto = `Olá! Meu nome é ${nome} (%0AEmail: ${email})%0AAssunto: ${assunto}%0AMensagem: ${mensagem}`;
+        const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${texto}`;
+
+        window.open(url, '_blank');
+    });
+</script>
+
+</html>

@@ -1,0 +1,140 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        display: flex;
+        background-color: #ff3c9b;
+        height: 125px;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    nav ul li a:hover {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #ffcde5;
+    }
+
+    .img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .sobre {
+        background-color: #fff7fb;
+    }
+
+    .container2 {
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 70px;
+    }
+
+    .container2 h2 {
+        color: #ff359a;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .contato {
+        background-color: #ffeaf4;
+        padding: 50px 0;
+    }
+
+    .contato .container2 {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 10px;
+
+    }
+
+    .contato h2 {
+        text-align: center;
+        color: #ff359a;
+        margin-bottom: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .contato form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contato input,
+    .contato textarea {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #fdeaf3;
+        border: 2px solid #ffcfe6;
+        font-size: 14px;
+        resize: none;
+    }
+
+    .contato textarea {
+        min-height: 120px;
+    }
+
+    .contato button {
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #ff359a;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contato button:hover {
+        background-color: #ff5dab;
+    }
+
+    footer {
+        background-color: #ff3c9b;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+    }
